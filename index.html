@@ -19,7 +19,7 @@
 
     <script type="text/babel">
 
-        // crear boton con simbolo de resta, otro de suma, y que modifique el valor numerico de una div.
+        // Boton con simbolo de resta, otro de suma, y que modifique el valor numerico de una div.
         // El numero no puede bajar de cero y no puede subir de 10
 
         const elementoRaiz = ReactDOM.createRoot(document.querySelector(".contenedor"));
@@ -35,12 +35,6 @@
                     <button onClick={ () => setNum(num < 10 ? ++num : num) }>-</button> 
                     </>
             );
-
-
-            //Asi lo hice yo (mal porque no limita el resultado):
-            // button onClick={ e => setNum(--e.target.value) }>-</button>
-            // <input max="10" min="0" value= {`${num}`} />
-            // <button onClick={ e => setNum(++e.target.value) }>+</button>
         };
 
         elementoRaiz.render( <Calculadora/> );
